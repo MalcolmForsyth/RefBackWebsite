@@ -4,6 +4,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import referral from '../../static/referral.png';
+import shield from '../../static/shield.png';
+import checkmarks from '../../static/checkmarks.png';
 
 const item = {
   display: 'flex',
@@ -28,22 +31,21 @@ function ProductValues() {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
+                <Box
                 component="img"
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
+                src={checkmarks}
+                alt="checkmarks"
                 sx={{ height: 55 }}
-              />
+                />
               <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
+                Verifying your Experience
               </Typography>
               <Typography variant="h5">
                 {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
+                  'By ensuring that your resume has been verified by a manager, '
                 }
-
                 {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
+                    'you can stand out from the crowd in a unique way'
                 }
               </Typography>
             </Box>
@@ -52,19 +54,19 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
+                src={shield}
+                alt="shield"
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
+                Preventing Fraud
               </Typography>
               <Typography variant="h5">
                 {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
+                  'With the ever-growing competitive nature of the job market, '
                 }
 
-                {'your Sundays will not be alike.'}
+                {'resume-based fraud is at an all-time high'}
               </Typography>
             </Box>
           </Grid>
@@ -72,16 +74,16 @@ function ProductValues() {
             <Box sx={item}>
               <Box
                 component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
+                src={referral}
+                alt="referral"
                 sx={{ height: 55 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
+                Fetching Referrals
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'Referrals are the most sure-fire way to communicate authenticity, '}
+                {'and we are here to help you find them without pestering your friends.'}
               </Typography>
             </Box>
           </Grid>

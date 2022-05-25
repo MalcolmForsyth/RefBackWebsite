@@ -6,6 +6,7 @@ import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
+import resume from '../../static/resume.jpg';
 
 function ProductCTA() {
   const [open, setOpen] = React.useState(false);
@@ -34,10 +35,10 @@ function ProductCTA() {
           >
             <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+                Stay tuned
               </Typography>
               <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+                Join our newletter to hear about employment opportunities and new referrals
               </Typography>
               <TextField
                 noBorder
@@ -65,7 +66,7 @@ function ProductCTA() {
           <Box
             sx={{
               position: 'absolute',
-              top: -67,
+              top: -40,
               left: -67,
               right: 0,
               bottom: 0,
@@ -75,16 +76,17 @@ function ProductCTA() {
           />
           <Box
             component="img"
-            src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750&q=80"
+            src={resume}
             alt="call to action"
             sx={{
               position: 'absolute',
-              top: -28,
+              top: -12,
               left: -28,
               right: 0,
               bottom: 0,
               width: '100%',
-              maxWidth: 600,
+              maxWidth: 500,
+              maxHeight:500
             }}
           />
         </Grid>
@@ -92,7 +94,7 @@ function ProductCTA() {
       <Snackbar
         open={open}
         closeFunc={handleClose}
-        message="We will send you our best offers, once a week."
+        message="You've been added! Cancel anytime with ease"
       />
     </Container>
   );

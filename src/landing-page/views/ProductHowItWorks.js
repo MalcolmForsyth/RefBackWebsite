@@ -60,44 +60,42 @@ function ProductHowItWorks() {
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>1.</Box>
-                <Box
+                {/* <Box
                   component="img"
                   src="/static/themes/onepirate/productHowItWorks1.svg"
                   alt="suitcase"
                   sx={image}
-                />
+                /> */}
                 <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
+                  Build your resume on your own or with one of our free templates
                 </Typography>
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>2.</Box>
-                <Box
+                {/* <Box
                   component="img"
                   src="/static/themes/onepirate/productHowItWorks2.svg"
                   alt="graph"
                   sx={image}
-                />
+                /> */}
                 <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so
-                  be quick.
+                  We'll have your managers observe and certify your credentials
                 </Typography>
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>3.</Box>
-                <Box
+                {/* <Box
                   component="img"
                   src="/static/themes/onepirate/productHowItWorks3.svg"
                   alt="clock"
                   sx={image}
-                />
+                /> */}
                 <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+                  You'll be automatically referred to thousands of companies, curated to your goals
                 </Typography>
               </Box>
             </Grid>

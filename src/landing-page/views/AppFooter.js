@@ -58,7 +58,7 @@ export default function AppFooter() {
               spacing={2}
               sx={{ height: 120 }}
             >
-              <Grid item sx={{ display: 'flex' }}>
+              {/* <Grid item sx={{ display: 'flex' }}>
                 <Box component="a" href="https://mui.com/" sx={iconStyle}>
                   <img
                     src="/static/themes/onepirate/appFooterFacebook.png"
@@ -71,7 +71,7 @@ export default function AppFooter() {
                     alt="Twitter"
                   />
                 </Box>
-              </Grid>
+              </Grid> */}
               <Grid item>
                 <Copyright />
               </Grid>
@@ -83,10 +83,10 @@ export default function AppFooter() {
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/terms/">Terms</Link>
+                <Link href="/terms/">Terms</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/privacy/">Privacy</Link>
+                <Link href="/privacy/">Privacy</Link>
               </Box>
             </Box>
           </Grid>
@@ -113,8 +113,8 @@ export default function AppFooter() {
           <Grid item>
             <Typography variant="caption">
               {'Icons made by '}
-              <Link href="https://www.freepik.com" rel="sponsored" title="Freepik">
-                Freepik
+              <Link href="https://icons8.com/icon/24522/check-all" rel="sponsored" title="Freepik">
+                Icons8
               </Link>
               {' from '}
               <Link href="https://www.flaticon.com" rel="sponsored" title="Flaticon">

@@ -8,7 +8,7 @@ function ProductSmokingHero() {
   return (
     <Container
       component="section"
-      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', my: 9 }}
+      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', py: 12 }}
     >
       <Button
         sx={{
@@ -26,12 +26,6 @@ function ProductSmokingHero() {
       <Typography variant="subtitle1" sx={{ my: 3 }}>
         We are here to help. Get in touch!
       </Typography>
-      <Box
-        component="img"
-        src="/static/themes/onepirate/producBuoy.svg"
-        alt="buoy"
-        sx={{ width: 60 }}
-      />
     </Container>
   );
 }
